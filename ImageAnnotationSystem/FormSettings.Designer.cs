@@ -1,4 +1,4 @@
-﻿namespace GeneralAnnotationSystem
+﻿namespace ImageAnnotationSystem
 {
     partial class FormSettings
     {

@@ -12,7 +12,7 @@ using System.Windows.Forms;
 using Emgu.CV.Util;
 using System.Threading;
 
-namespace GeneralAnnotationSystem
+namespace ImageAnnotationSystem
 {
     public static class ImageProcess
     {

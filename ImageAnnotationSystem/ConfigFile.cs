@@ -9,7 +9,7 @@ using System.Windows.Forms;
 using System.IO;
 using System.Diagnostics;
 
-namespace GeneralAnnotationSystem
+namespace ImageAnnotationSystem
 {
     public static class ConfigFile
     {

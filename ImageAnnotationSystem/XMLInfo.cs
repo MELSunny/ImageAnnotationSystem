@@ -8,7 +8,7 @@ using System.IO;
 using System.Drawing;
 using System.Drawing.Imaging;
 using System.Windows.Forms;
-namespace GeneralAnnotationSystem
+namespace ImageAnnotationSystem
 {
     class XMLInfo
     {

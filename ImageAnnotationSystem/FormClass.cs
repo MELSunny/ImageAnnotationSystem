@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace GeneralAnnotationSystem
+namespace ImageAnnotationSystem
 {
     public partial class FormClass : Form
     {

@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.IO;
 
-namespace GeneralAnnotationSystem
+namespace ImageAnnotationSystem
 {
     public partial class FormMain : Form
     {

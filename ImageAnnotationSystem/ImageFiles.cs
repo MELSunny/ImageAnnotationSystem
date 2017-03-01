@@ -7,7 +7,7 @@ using System.IO;
 using System.Windows.Forms;
 using System.Drawing;
 
-namespace GeneralAnnotationSystem
+namespace ImageAnnotationSystem
 {
     public class ImageFiles
     {
