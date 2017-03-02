@@ -113,7 +113,7 @@ namespace ImageAnnotationSystem
             lvwObject.BeginUpdate();  
             for (int i = 0; i < xmlInfo.ObjectList.Count(); i++)
             {
-                var currImage = Image.FromFile(ConfigFile.WorkDirectory.FullName+"\\"+xmlInfo.ObjectList[i].Name+ "_240px\\"+xmlInfo.ImgFile.Name+"_"+xmlInfo.ObjectList[i].xmin + "_" + xmlInfo.ObjectList[i].ymin + "_" + xmlInfo.ObjectList[i].xmax + "_" + xmlInfo.ObjectList[i].ymax + ".tiff");
+                var currImage = Image.FromFile(ConfigFile.WorkDirectory.FullName+"\\"+xmlInfo.ObjectList[i].Name+ "_240px\\"+xmlInfo.ImgFile.Name+"_"+xmlInfo.ObjectList[i].xmin + "_" + xmlInfo.ObjectList[i].ymin + "_" + xmlInfo.ObjectList[i].xmax + "_" + xmlInfo.ObjectList[i].ymax + ".bmp");
                 imgList.Images.Add(ImageProcess.FixedSize(currImage, imgList.ImageSize, Color.White));
                 GC.Collect();
                 ListViewItem listViewItem = new ListViewItem();

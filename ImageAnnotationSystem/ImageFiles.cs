@@ -61,7 +61,7 @@ namespace ImageAnnotationSystem
                             try
                             {
                                 var targetList = ImageProcess.TargetObject((Bitmap)Image.FromFile(imagepair.CropImage.FullName));
-                                var nonTargetList = ImageProcess.NonTargetObject((Bitmap)Image.FromFile(imagepair.CropImage.FullName), targetList, 2);
+                                var nonTargetList = ImageProcess.NonTargetObject((Bitmap)Image.FromFile(imagepair.CropImage.FullName), targetList, 4);
                                 foreach (var tar in targetList)
                                 {
                                     xmlInfo.AddObject(tar);

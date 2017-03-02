@@ -153,9 +153,9 @@ namespace ImageAnnotationSystem
             {
                 Directory.CreateDirectory(imgFile.DirectoryName + "\\" + myobject.Name + "_240px");
             }
-            ImageProcess.CropRectangle(new Point(myobject.xmin, myobject.ymin), new Point(myobject.xmax, myobject.ymax), sourceimg).Save(imgFile.DirectoryName + "\\" + myobject.Name + "\\" + imgFile.Name + "_" + myobject.xmin + "_" + myobject.ymin + "_" + myobject.xmax + "_" + myobject.ymax + ".tiff", ImageFormat.Tiff);
+            ImageProcess.CropRectangle(new Point(myobject.xmin, myobject.ymin), new Point(myobject.xmax, myobject.ymax), sourceimg).Save(imgFile.DirectoryName + "\\" + myobject.Name + "\\" + imgFile.Name + "_" + myobject.xmin + "_" + myobject.ymin + "_" + myobject.xmax + "_" + myobject.ymax + ".bmp", ImageFormat.Bmp);
             Image image240 = ImageProcess.Crop240Rectangle(new Point(myobject.xmin, myobject.ymin), new Point(myobject.xmax, myobject.ymax), sourceimg);
-            ImageProcess.FixedSize(image240, new Size(240, 240), Color.Black).Save(imgFile.DirectoryName + "\\" + myobject.Name + "_240px\\" + imgFile.Name + "_" + myobject.xmin + "_" + myobject.ymin + "_" + myobject.xmax + "_" + myobject.ymax + ".tiff", ImageFormat.Tiff);            
+            ImageProcess.FixedSize(image240, new Size(240, 240), Color.Black).Save(imgFile.DirectoryName + "\\" + myobject.Name + "_240px\\" + imgFile.Name + "_" + myobject.xmin + "_" + myobject.ymin + "_" + myobject.xmax + "_" + myobject.ymax + ".bmp", ImageFormat.Bmp);            
             root.Add
             (
                 new XElement
@@ -213,8 +213,8 @@ namespace ImageAnnotationSystem
                 select el;
 
             aim_object.First().Remove();
-            File.Delete(imgFile.DirectoryName + "\\" + myobject.Name + "\\" + imgFile.Name + "_" + myobject.xmin + "_" + myobject.ymin + "_" + myobject.xmax + "_" + myobject.ymax + ".tiff");
-            File.Delete(imgFile.DirectoryName + "\\" + myobject.Name + "_240px\\" + imgFile.Name + "_" + myobject.xmin + "_" + myobject.ymin + "_" + myobject.xmax + "_" + myobject.ymax + ".tiff");
+            File.Delete(imgFile.DirectoryName + "\\" + myobject.Name + "\\" + imgFile.Name + "_" + myobject.xmin + "_" + myobject.ymin + "_" + myobject.xmax + "_" + myobject.ymax + ".bmp");
+            File.Delete(imgFile.DirectoryName + "\\" + myobject.Name + "_240px\\" + imgFile.Name + "_" + myobject.xmin + "_" + myobject.ymin + "_" + myobject.xmax + "_" + myobject.ymax + ".bmp");
             SaveToFile();
         }
     }

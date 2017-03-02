@@ -178,6 +178,7 @@ namespace ImageAnnotationSystem
             else
                 return true;
         }
+        public static int padding = 8;
         public static List<MyObject> TargetObject(Bitmap binimg)
         {
             Image<Gray, Byte> imgBinary = new Image<Gray, Byte>(binimg);
@@ -206,7 +207,7 @@ namespace ImageAnnotationSystem
                         if (y > ymax)
                             ymax = y;                       
                     }
-                    res.Add(new MyObject(1, xmin, ymin, xmax, ymax));
+                    res.Add(new MyObject(1, xmin- padding, ymin- padding, xmax+ padding, ymax+ padding));
                 }
             }
             return res; 
